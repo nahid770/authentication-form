@@ -1,0 +1,4 @@
+.screenColor{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 20%, rgba(226,41,41,1) 76%, rgba(182,38,33,1) 100%);
+}
