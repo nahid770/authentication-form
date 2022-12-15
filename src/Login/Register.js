@@ -68,7 +68,7 @@ const Register = () => {
                   })}
                 />
                 <label className="label">
-                {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
+                {errors.name?.type === 'required' && <span className="label-text-alt text-white">{errors.name.message}</span>}
                 </label>
                 </div>
 
@@ -92,8 +92,8 @@ const Register = () => {
                   })}
                 />
                 <label className="label">
-                {errors.email?.type === 'required' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
-                {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
+                {errors.email?.type === 'required' && <span className="label-text-alt text-white">{errors.email.message}</span>}
+                {errors.email?.type === 'pattern' && <span className="label-text-alt text-white">{errors.email.message}</span>}
                     
                 </label>
                 </div>
@@ -133,7 +133,7 @@ const Register = () => {
                 <p className='text-white'>Already have an account? <Link className='text-slate-100 underline' to='/login'> Please Login</Link></p>
                 <div className='divider'>Or</div>
 
-                <Link onClick={()=> signInWithGoogle()} className='p-2 rounded-md my-2 bg-slate-400 text-white flex justify-center items-center'><span><FcGoogle className='w-6 h-6 mr-2'></FcGoogle></span> Google Sign In</Link>
+                <Link onClick={()=> signInWithGoogle()} className='p-2 rounded-md my-1 bg-slate-400 text-white flex justify-center items-center'><span><FcGoogle className='w-6 h-6 mr-2'></FcGoogle></span> Google Sign In</Link>
                 <Link onClick={()=> signInWithFacebook()}  className='p-2 rounded-md bg-blue-600 text-white flex justify-center items-center'><span><FaFacebook className='w-6 h-6 mr-2'></FaFacebook></span > Facebook Sign In</Link>
             </div>
             </div>
